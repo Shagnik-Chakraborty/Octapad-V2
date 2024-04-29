@@ -700,7 +700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &685125037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1216,30 +1216,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 782628377}
-  - component: {fileID: 782628376}
+  - component: {fileID: 782628378}
   m_Layer: 0
   m_Name: Ball Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &782628376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782628375}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aac80c8f23b695042a704a04962a531c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 4396624071347867529, guid: 689d3f8536db9b54cb90e58474e89da8, type: 3}
-  punchThreshold: 1.5
-  forceMultiplier: 2
-  cooldown: 0.5
+  m_IsActive: 0
 --- !u!4 &782628377
 Transform:
   m_ObjectHideFlags: 0
@@ -1255,6 +1239,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &782628378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782628375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f430e7aad7f009540b2937f70227d86e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 4396624071347867529, guid: 689d3f8536db9b54cb90e58474e89da8, type: 3}
+  force: 4
 --- !u!1 &790615543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,6 +1885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1446005225}
+  - component: {fileID: 1446005226}
   m_Layer: 0
   m_Name: RightControllerAnchor
   m_TagString: Untagged
@@ -1910,6 +1909,20 @@ Transform:
   m_Father: {fileID: 920109788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1446005226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446005224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed674b54206269c48b384c4861d1d237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 2640615469103027717, guid: 908507920aafb6e46bb07d7a989f2c18, type: 3}
+  previewPrefab: {fileID: 5181915385796627042, guid: c61f959ba8e0cbc4ab60c692e5f58aef, type: 3}
 --- !u!1 &1831724374
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,7 +1993,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867753129}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
